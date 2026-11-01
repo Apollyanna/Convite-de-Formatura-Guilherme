@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Convite de Formatura – Guilherme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,500&family=Jost:wght@300;400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<i class="bar" id="bar"></i>
+<canvas id="dust" aria-hidden="true"></canvas>
+
+<div class="cover" id="cover">
+  <div class="door l"></div><div class="door r"></div>
+  <div class="frame"></div>
+  <div class="stage">
+    <button class="seal" id="seal" aria-label="Abrir convite">
+      <svg class="ringtxt" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="c" d="M100 100m-84 0a84 84 0 1 1 168 0a84 84 0 1 1-168 0"/></defs><text><textPath href="#c" id="ringText"></textPath></text></svg>
+      <span class="mono">G</span>
+    </button>
+    <p class="hint">Toque no selo para abrir</p>
+  </div>
+</div>
+
+<main class="invite">
+  <header class="hero">
+    <span class="year" id="year" aria-hidden="true"></span>
+    <svg class="cap" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path pathLength="1" d="M32 12 4 26l28 14 28-14-28-14Z"/><path pathLength="1" d="M16 33v11c0 4 8 8 16 8s16-4 16-8V33"/><path pathLength="1" d="M60 26v18"/></svg>
+    <p class="turma" id="turma"></p>
+    <h1>Formatura</h1>
+    <p class="name">Guilherme</p>
+    <div class="sep" aria-hidden="true"><i></i><b></b><i></i></div>
+    <p class="curso" id="curso"></p>
+    <p class="for" id="for"></p>
+    <div class="cue"><span>ROLE</span><i></i></div>
+  </header>
+  <section class="sec msg">
+    <blockquote id="p1"></blockquote>
+    <div class="txt"><p id="p2"></p><p id="p3"></p><p class="big gtxt" id="p4"></p></div>
+  </section>
+  <div class="orn"><i></i><b></b><i></i></div>
+  <section class="sec">
+    <div class="when">
+      <p class="sem" id="sem"></p>
+      <p class="dia gtxt" id="dia"></p>
+      <p class="mes" id="mes"></p>
+      <p class="num" id="num"></p>
+      <p class="hora" id="hora"></p>
+      <p class="until">Faltam</p>
+      <div class="count" id="count"></div>
+    </div>
+  </section>
+  <section class="sec rsvp">
+    <div class="medal" aria-hidden="true"><span>G</span></div>
+    <p class="ask">Posso contar com você?</p>
+    <p class="sub">Um toque e sua resposta vai direto para o WhatsApp do Guilherme.</p>
+    <div class="btns">
+      <a class="btn gold" id="rsvp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.5-5.4A8.5 8.5 0 1 1 21 12Z"/></svg>Confirmar presença</a>
+      <a class="btn" id="agenda" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Salvar na agenda</a>
+    </div>
+    <p class="carinho" id="carinho"></p>
+    <p class="sign" id="sign"><span class="gtxt" id="signT"></span></p>
+    <button class="top" id="top" type="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>VOLTAR AO INÍCIO</button>
+  </section>
+  <p class="end" id="end"></p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
